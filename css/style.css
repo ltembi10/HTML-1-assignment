@@ -1,15 +1,84 @@
+/* ===== Base (Desktop) Styles ===== */
+
 body {
-    background-color: #ffffff;   /* white background */
-    color: #111111;              /* very dark gray text */
+    background-color: #ffffff;
+    color: #111111;
     font-family: Verdana, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0 40px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
+    margin: 0 15px;
+    text-decoration: none;
     color: #003366;
     font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.right-img {
+    float: right;
+    margin-left: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* ===== Responsive Design (Mobile) ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 15px;
+        font-size: 16px;   /* Slightly smaller font for mobile */
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav a {
+        display: block;       /* Stack navigation links */
+        margin: 10px 0;
+    }
+
+    .right-img {
+        float: none;          /* Remove float */
+        display: block;
+        margin: 20px auto;    /* Center image */
+        width: 100%;          /* Make image responsive */
+        max-width: 300px;
+    }
+
+    section {
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
 }
